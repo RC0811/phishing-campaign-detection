@@ -16,3 +16,7 @@ The third threat actor category consists of abusive or malicious system users wh
 The system exposes several entry points through which untrusted input may be received. These include interfaces for ingesting email content, URL submissions, and web or API-submitted text, all of which may be fully controlled by external attackers. In addition, the system accepts analyst feedback used to refine detection decisions, representing a high-impact input despite originating from a trusted role.
 
 Trust boundaries exist at multiple stages of the system. Untrusted external inputs cross into the ingestion layer, where validation and normalization are required. Processed events then move into internal detection and correlation components, including machine learning inference, where inputs directly influence security decisions. Additional trust boundaries exist between detection outputs and automated response mechanisms, as well as between system-generated results and SOC analysts who rely on them for operational decisions.
+## 5. Threat Scenarios and Mitigations
+Keep the structure
+Keep the realism
+Remove anything you won’t implement in v1
