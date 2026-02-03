@@ -1,0 +1,4 @@
+# Threat Model – Phishing Campaign Detection Platform
+
+## 1. System Overview
+This system ingests content from multiple communication channels, including email messages, URLs, and web or API-submitted text, to identify potential phishing and social engineering activity. Incoming events are processed in near real time using a combination of rule-based checks and machine learning inference to assign a risk score and determine whether events are related to a broader attack campaign. The system correlates similar events over time to provide campaign-level visibility and generates security alerts with limited automated response actions. The platform is deployed as a cloud-native service on Microsoft Azure and is intended to support operational decision-making by SOC analysts in small to mid-sized organizations.
