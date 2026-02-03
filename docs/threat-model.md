@@ -6,3 +6,9 @@ This system ingests content from multiple communication channels, including emai
 The primary assets protected by this system include user credentials that may be targeted by phishing attacks, the integrity of security decisions produced by the detection pipeline, and the detection logic itself, including rule-based heuristics and machine learning models. The system also protects campaign correlation data, which provides insight into coordinated attack activity and is critical for long-term threat analysis.
 
 Secondary assets include ingested event data that may contain sensitive information, automated response mechanisms such as alerts and deny-lists, and overall system availability, including protection against resource exhaustion and cost abuse. Compromise of these assets could degrade system effectiveness or cause operational disruption.
+## 3. Threat Actors
+he primary threat actors considered in this model include external phishing operators who conduct social engineering campaigns to compromise user credentials and gain unauthorized access. These actors frequently vary content, rotate infrastructure, and leverage legitimate services to evade detection.
+
+A second class of threat actors includes more advanced adversaries who intentionally probe and adapt to the detection system itself in order to bypass automated defenses. These actors may attempt to infer detection logic, exploit model weaknesses, or operate below detection thresholds over extended periods.
+
+The third threat actor category consists of abusive or malicious system users who interact directly with ingestion or feedback interfaces. These actors may attempt to overload system resources, extract behavioral signals from detection responses, or manipulate feedback mechanisms to degrade system performance over time.
