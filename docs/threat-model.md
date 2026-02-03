@@ -20,3 +20,9 @@ Trust boundaries exist at multiple stages of the system. Untrusted external inpu
 Keep the structure
 Keep the realism
 Remove anything you won’t implement in v1
+## 6. Assumptions, Limitations, and Residual Risk
+This threat model assumes that SOC analysts interacting with the system are trusted and operate within established security procedures, and that initial training data used for machine learning models is not intentionally poisoned. It also assumes that underlying cloud platform security controls function as intended and that automated response actions are configured conservatively to limit operational impact.
+
+The system has inherent limitations, including the possibility that novel or highly targeted phishing techniques may bypass detection mechanisms, particularly in early deployments. False positives are expected during initial operation, and image-only phishing detection and advanced campaign analysis may be constrained in the initial version of the system.
+
+Even with mitigations in place, residual risk remains. Sophisticated adversaries may adapt to detection logic over time, automated responses may occasionally result in unintended disruption, and detection performance may degrade without continuous monitoring and tuning.
